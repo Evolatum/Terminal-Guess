@@ -14,6 +14,7 @@ class Word{
 
         for(let letter of this.letters){
             word+=letter.char;
+            word+=" ";
         }
 
         return word;
