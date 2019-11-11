@@ -9,7 +9,7 @@ class Word{
         }
     }
 
-    get letters(){
+    getLetters(){
         var word = "";
 
         for(let letter of this.letters){
@@ -19,10 +19,12 @@ class Word{
         return word;
     }
 
-    checkLetter(char){
+    checkLetters(char){
+        var hadLetter = false;
         for(let letter of this.letters){
-            letter.check(char);
+            if(letter.check(char)) hadLetter=true;
         }
+        return hadLetter;
     }
 }
 

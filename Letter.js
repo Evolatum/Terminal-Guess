@@ -1,12 +1,12 @@
 class Letter{
     constructor(char){
-        this.char = char;
+        this.secretChar = char;
         this.guessed = false;
     }
 
     get char(){
         if(this.guessed){
-            return this.char;
+            return this.secretChar;
         }
         else{
             return "_";
@@ -14,9 +14,11 @@ class Letter{
     }
 
     check(char){
-        if(this.char === char){
+        if(this.secretChar === char){
             this.guessed = true;
+            return true;
         }
+        return false;
     }
 }
   
