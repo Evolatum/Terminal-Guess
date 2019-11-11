@@ -84,7 +84,7 @@ var engine = {
                 engine.newWord();
                 engine.play();
             }else{
-                console.log("Thanks for playing!");
+                console.log("\x1b[33m","\nThanks for playing!");
             }
         });
     }
